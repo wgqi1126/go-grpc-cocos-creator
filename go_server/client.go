@@ -2,12 +2,12 @@ package main
 
 import (
 	"context"
+	pb "go_server/proto"
 	"log"
 	"os"
 	"time"
 
 	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 )
 
 const (

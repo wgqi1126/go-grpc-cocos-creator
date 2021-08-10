@@ -5,15 +5,15 @@ import (
 	"log"
 	"net"
 
+	pb "go_server/proto"
 	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 )
 
 const (
 	port = ":50051"
 )
 
-// server is used to implement helloworld.GreeterServer.
+// server is used to implement pb.GreeterServer.
 type server struct {
 	pb.UnimplementedGreeterServer
 }
